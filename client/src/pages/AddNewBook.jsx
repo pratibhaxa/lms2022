@@ -24,11 +24,15 @@ const Header = styled.div`
 `;
 
 const ContainerInner = styled.div`
-    /* display: flex; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
 `;
 
 const Heading = styled.h2`
     display: flex;
+    justify-content: center;
+    align-items: center;
 `;
 
 const Back = styled.div`
@@ -37,6 +41,12 @@ const Back = styled.div`
 
 const Table = styled.table`
     background-color: #f6e4e4;
+`;
+
+const TableContainer = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `;
 
 const Tr = styled.tr`
@@ -49,6 +59,9 @@ const Action = styled.div`
 `;
 
 const Button = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `;
 
 function AddNewBook() {
@@ -79,11 +92,13 @@ function AddNewBook() {
     return(
         <Container>
             <Header>Library Management System</Header>
+            
             <ContainerInner>
                 <Back><Link to='/after-login-page'>Back</Link></Back>
+                
                     <Heading>Enter Book Details : </Heading>
                     <br />
-                    
+                    <TableContainer>
                     <Table>
                         <Tr>
                             <Td>Enter Book ID : </Td>
@@ -180,6 +195,7 @@ function AddNewBook() {
                         {new Date().toLocaleString() + ""}
                         </Tr> */}
                     </Table>
+                    </TableContainer>
                     <br />
                     <Action></Action>
                     <br />

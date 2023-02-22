@@ -2,6 +2,7 @@ import { Routes, Route } from'react-router-dom';
 import AddNewBook from './pages/AddNewBook';
 import AddNewBookD from './pages/AddNewBookD';
 import AfterLoginPage from './pages/AfterLoginPage';
+import Filter from './pages/Filter';
 import Home from './pages/Home';
 import HomePage from './pages/HomePage';
 import Login from './pages/Login';
@@ -36,6 +37,7 @@ function App() {
       <Route  path='/after-login-page' element={<AfterLoginPage />}></Route>
       <Route  path='/add-new-book' element={<AddNewBook />}></Route>
       <Route  path='/view-books' element={<ViewBooks />}></Route>
+      <Route  path='/filter' element={<Filter />}></Route>
 
 
 
